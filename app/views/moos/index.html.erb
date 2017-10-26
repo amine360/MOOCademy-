@@ -1,0 +1,19 @@
+<h1>MOOCademy</h1>
+
+<p>Les cours c'est peut être important ?</p>
+
+<% @moo.each do |moo| %>
+
+    <h1><%= moo.classes %></h1>
+
+    <p><%= moo.description %></p>
+
+    <a href="<%= moo_path(moo.id) %>" data-method="delete" >Supprimer</a>
+
+<% end %>
+
+<p>
+
+    <a href="<%= new_moo_path %>" >Créer un cour</a>
+
+</p>

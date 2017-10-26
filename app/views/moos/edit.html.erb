@@ -1,0 +1,29 @@
+<h1>Editer le cour</h1>
+
+<%= form_for @moo do |f| %>
+
+  <div>
+
+     <label>Titre du cour</label>
+
+     <%= f.text_field :classes %>
+
+  </div>
+
+  <div>
+
+     <label>Description du cour</label>
+
+     <%= f.text_area :description %>
+
+  </div>
+
+  <div>
+
+     <button type="submit" >Créer le cour</button>
+
+  </div>
+
+  <%= link_to 'Clique pour détruire', @moo, method: :delete %>
+
+<% end %>
